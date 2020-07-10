@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>RPS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background: linear-gradient(to right, red,orange,yellow,green);display:flex;justify-content:center;">
+    <div style="margin-top:4%">
+        <h1 style="font-family: 'Permanent Marker', cursive;">Welcome !!</h1>
+        <label for="selector2"><h3  style="font-family: 'Bungee', cursive;">How many points you wanna play for ?</h3></label>
+        <input list="options" id="selector" name="name" placeholder="choose from options" required />
+        <p style="color:red;" id="warning"></p>
+        <datalist id="options">
+            <option value="7">
+            <option value="20">
+            <option value="50">
+        </datalist>
+        <br /><br /><br />
+        <button style="padding:10px 20px;" id="proceed" onclick="proceed()">Proceed</button>
+        <script  src="app.js"></script>
+    </div>
+</body>
+</html>
