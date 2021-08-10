@@ -30,6 +30,7 @@ function game(userChoice) {
     if (userScore == limit) redirect("Congratulations !! ");
     else if (computerScore == limit) redirect("Better luck next time. ");
 };
+
 document.getElementById("rock").addEventListener("click", function () { game("rock"); });
 document.getElementById("paper").addEventListener("click", function () { game("paper"); });
 document.getElementById("scissors").addEventListener("click", function () { game("scissors"); });
