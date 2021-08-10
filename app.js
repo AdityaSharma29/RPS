@@ -16,7 +16,7 @@ function redirect(str) {
 };
 function game(userChoice) {
     var rndmNmb = Math.floor(Math.random() * 3 + 1)
-    var source = "/img/" + srcObj[rndmNmb] + ".png";
+    var source = "./img/" + srcObj[rndmNmb] + ".png";
     document.getElementById("computer-imgs").src = source;
     if (userChoice !== srcObj[rndmNmb]) {
         if (userChoice == "rock" && srcObj[rndmNmb] == "scissors") userScore++;
